@@ -1,0 +1,24 @@
+[2026-04-10T07:39:06Z] === ENRICH ITERATION 1 START | repo=senchalabs/connect sha=80fd58aa ===
+[2026-04-10T07:39:06Z] [iter=1] PHASE START: enrich repo=senchalabs/connect sha=80fd58aa runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/80fd58aa-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/80fd58aa15531d9217781bb11ddb5336ff04b69f.nq.gz
+[2026-04-10T07:39:22Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-10T07:39:25Z] [iter=1] AST store loaded triples=477902 load_secs=3 mem_mb=759 MB
+[2026-04-10T07:39:25Z] [iter=1] Step 2: Finding LSP targets mem_mb=759 MB
+[2026-04-10T07:39:25Z] [iter=1] LSP targets found call_sites=4666 imports=0 extends=0 implements=0 secs=0
+[2026-04-10T07:39:25Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=759 MB
+[2026-04-10T07:39:28Z] [iter=1] Position index built positions=32553 nodes_with_types=38383 secs=2 mem_mb=759 MB
+[2026-04-10T07:39:28Z] [iter=1] Step 3: Starting LSP resolution mem_mb=759 MB already_completed_types=[] already_completed_files=0
+[2026-04-10T07:39:28Z] [iter=1] Resolving target type target_type=call_site count=4666
+[2026-04-10T07:43:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.4 files_done=1 resolved=61 errors=1388 current=examples/session.js
+[2026-04-10T07:44:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.0 files_done=7 resolved=80 errors=1597 current=test/cookieParser.js
+[2026-04-10T07:44:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.7 files_done=10 resolved=87 errors=1838 current=test/vhost.js
+[2026-04-10T07:46:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.9 files_done=12 resolved=89 errors=2245 current=test/static.js
+[2026-04-10T07:46:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.5 files_done=14 resolved=107 errors=2443 current=lib/middleware/staticCache.js
+[2026-04-10T07:47:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.5 files_done=20 resolved=122 errors=2776 current=lib/proto.js
+[2026-04-10T07:48:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.6 files_done=28 resolved=127 errors=3146 current=lib/middleware/session.js
+[2026-04-10T07:49:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.1 files_done=37 resolved=134 errors=3329 current=lib/middleware/multipart.js
+[2026-04-10T07:49:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.7 files_done=48 resolved=141 errors=3543 current=lib/middleware/cookieSession.js
+[2026-04-10T07:50:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.2 files_done=64 resolved=155 errors=3722 current=test/exports.js
+[2026-04-10T07:50:34Z] [iter=1] Target type resolved target_type=call_site resolved=159 errors=3792 secs=666 mem_mb=759 MB
+[2026-04-10T07:50:37Z] [iter=1] Step 5: Writing final enrichment file triples=34871
+[2026-04-10T07:50:38Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/80fd58aa15531d9217781bb11ddb5336ff04b69f.nq.gz size_kb=576
+[2026-04-10T07:50:38Z] [iter=1] PHASE END: enrich elapsed_s=692 elapsed_min=11.5 total_triples=34871
